@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -35,9 +35,10 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
-* {
+/* => CSS Contact Form */
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -126,4 +127,4 @@ input::placeholder {
 
 .submit-button:hover {
   opacity: 0.8;
-}
+} */

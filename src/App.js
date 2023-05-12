@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import ContactForm from './components/ContactForm';
 import Contacto from './components/Contacto';
+import Colors from './components/Colors';
 // import Clock from './components/Clock';
 
 function App() {
@@ -58,19 +59,26 @@ function App() {
     //   </header>
 
     // </div>
-    <div className="App">
-      <h1>Contactos</h1>
 
-      <div className="card-container">
-        {
-          newContact.map((contacto, index) => {
-            return (
-              <Contacto key={index} contacto={contacto} changeContacto={changeContacto} removeContacto={removeContacto} />
-            )
-          })
-        }
-      </div>
-        <ContactForm onContact={aggContact}  />
+    // APP Contact 
+    // <div className="App">
+    //   <h1>Contactos</h1>
+
+    //   <div className="card-container">
+    //     {
+    //       newContact.map((contacto, index) => {
+    //         return (
+    //           <Contacto key={index} contacto={contacto} changeContacto={changeContacto} removeContacto={removeContacto} />
+    //         )
+    //       })
+    //     }
+    //   </div>
+    //     <ContactForm onContact={aggContact}  />
+    // </div>
+
+    //App Color
+    <div className="App"  style={{ margin: 'auto' }}>
+      <Colors />
     </div>
   );
 }
